@@ -22,7 +22,7 @@
     
                 <div class="mb-3">
                     <label  class="form-label"  for="image">image url</label>
-                    <input  class="form-control" type="text" id="image" name="campground[image]" valeu="<%=campground.image%>" required>
+                    <input  class="form-control" type="text" id="images" name="campground[image]" valeu="<%=campground.image%>" required>
                     <div class="valid-feedback">
                         looks good
                     </div>
@@ -45,12 +45,12 @@
                 </div>
     
                   <div class=" mb-3">
-                    <button class="btn btn-info">update campground</button>
+                    <button class="btn-info">update campground</button>
               </div>
                
             
             </form>
-            <a href="/campgrounds/ <%= campground._id %>">back to campground</a>
+            <a href="/campgrounds/<%= campground._id%>">back to campground</a>
 
         </div>
     
