@@ -2,6 +2,7 @@ if(process.env.NODE_END !== "production") {
   require('dotenv').config();
 }
 
+
 console.log(process.env.SECRET)
 console.log(process.env.API_KEY)
 
