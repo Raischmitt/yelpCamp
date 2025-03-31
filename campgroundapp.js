@@ -14,7 +14,6 @@ const session = require('express-session');
 const flash = require('connect-flash');
 const ExpressError = require('./utils/ExpressError');
 const methodOverrride = require('method-override');
-
 const passport = require('passport');
 const LocalStrategy = require('passport-local');
 const User = require('./models/user');
@@ -40,6 +39,8 @@ app.set('views', path.join(__dirname, 'views'));
 app.use(express.urlencoded({ extended: true }));
 app.use(methodOverrride('_method'));
 app.use(express.static(path.join(__dirname, 'public')))
+
+
 
 const sessionConfig = {
   secret: 'thisshouldbeabeabettersecrect!',
